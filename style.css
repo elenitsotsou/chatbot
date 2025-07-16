@@ -1,0 +1,146 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FAFAFA;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.chat-window {
+  width: 100vw;
+  height: 100vh;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+
+
+.chat-header {
+  background-color: #91A6FF;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  font-size: 14px;
+  color: #333333;
+}
+
+.bot-message {
+  background: #F0F4FF;
+  padding: 12px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  align-self: flex-start;
+}
+
+.user-message {
+  background: #E3F6F5;
+  padding: 12px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  align-self: flex-end;
+}
+
+.chat-input {
+  border-top: 1px solid #eee;
+  display: flex;
+  padding: 10px;
+  background: #fff;
+}
+
+.chat-input textarea {
+  flex: 1;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 14px;
+  resize: none;
+  background-color: #f7f7f7;
+}
+
+.send-btn {
+  background: #B8E0D2;
+  color: #333;
+  border: none;
+  margin-left: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-btn:hover {
+  background: #A5D6C5;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #999; /* αχνό γκρι */
+  margin-top: 4px;
+  text-align: right;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: #ffffffcc; /* ελαφρώς αχνό λευκό */
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.close-btn:hover {
+  color: #ffffff; /* πιο έντονο στο hover */
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.quick-replies-container {
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.quick-replies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.quick-replies button {
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.quick-replies button:hover {
+  background: #efefef;
+  border-color: #ccc;
+}

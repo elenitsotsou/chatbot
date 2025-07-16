@@ -1,0 +1,32 @@
+<!-- chat.html -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+<div class="chat-window">
+  <div class="chat-header">
+    <span>💬 Live Chat</span>
+    <button class="close-btn">✖</button>
+  </div>
+
+  <div class="chat-body">
+    <div class="system-message">
+      <strong>System Message</strong> 
+      <div class="timestamp" id="chat-start-time"></div>
+      <p>Thank you for contacting with our chatbot. Please note we collect and use your personal information in accordance with our Privacy Policies available at .com</p>
+    </div>
+  </div>
+
+  <div class="quick-replies">
+    <button data-msg="Θέλω να δω το μενού δωματίου">🧾 Μενού δωματίου</button>
+    <button data-msg="Τι μπορώ να δω στην περιοχή;">📍 Πληροφορίες περιοχής</button>
+    <button data-msg="Θέλω να μιλήσω με τη ρεσεψιόν">🛎 Επικοινωνία με ρεσεψιόν</button>
+    <button data-msg="Θέλω καθαρισμό στο δωμάτιο">🧼 Αίτημα καθαρισμού</button>
+    <button data-msg="Ποιες είναι οι ώρες check-in / check-out;">⏰ Check-in / Check-out</button>
+  </div>
+
+  <div class="chat-input">
+    <textarea placeholder="Type something..."></textarea>
+    <button class="send-btn">➤</button>
+  </div>
+</div>
